@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="formulaire">
+
+      <h1>Login</h1>
+      <form class="myForm">
+
+        <label for="mail">EMAIL ADDRESS</label><br>
+        <input type="mail" name="mail" id="mail"><br><br>
+
+        <label for="password">PASSWORD</label><br>
+        <input type="password" name="password" id="password"><br><br>
+
+        <a class="button" href="#popup1"><input type="button" name="valid" value="LOG IN" id="valid"></a><br><br>
+        <p>
+          Need an account ? <a href="#">Sign Up</a><br>
+          <a href="#" id="forgot">Forgot you password ?</a>
+        </p>
+      </form>
+
+    </div>
+
+    <div id="popup1" class="overlay">
+    <div class="popup">
+      <h2>Hi there !</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        You're logged in !
+      </div>
+    </div>
+    </div>
+
+  </body>
+</html>

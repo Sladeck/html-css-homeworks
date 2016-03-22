@@ -1,0 +1,55 @@
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  position: relative; }
+
+.text {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  color: white;
+  display: table-cell;
+  vertical-align: middle; }
+
+p {
+  text-align: center; }
+
+.block {
+  position: absolute;
+  height: 150px;
+  width: 100px; }
+
+.topLeft {
+  left: 0;
+  background-color: white; }
+
+.topLeft p {
+  position: relative;
+  font-size: 0.8em;
+  max-height: border-box;
+  max-width: border-box;
+  vertical-align: middle; }
+
+.topRight {
+  right: 0;
+  background-color: green; }
+
+.botLeft {
+  background-color: grey;
+  bottom: 0; }
+
+.botRight {
+  background-color: black;
+  bottom: 0;
+  right: 0; }
+
+.botRight p {
+  position: relative;
+  font-size: 0.8em;
+  max-height: border-box;
+  max-width: border-box;
+  color: white;
+  vertical-align: middle; }
+
+/*# sourceMappingURL=main.css.map */

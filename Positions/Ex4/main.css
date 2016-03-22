@@ -1,0 +1,101 @@
+/********************************** FADE IN DOWN *****************************/
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px); }
+  60% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0); } }
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); }
+  60% {
+    opacity: 1; }
+  100% {
+    transform: translateY(0); } }
+.fadeInDown {
+  animation: fadeInDown 1s ease alternate; }
+
+/***************************************************************************/
+
+.menu{
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  min-width: 500px;
+}
+
+li{
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+}
+
+.main_menu{
+  display: inline-block;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  font-size: 1.2em;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+.main_menu:hover{
+  background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.second_lvl{
+  display: none;
+  margin: auto;
+  background-color: black;
+  color: white;
+  width: 130px;
+  text-align: center;
+  font-size: 0.8em;
+  position: absolute;
+  top: 66px;
+  margin-left: -10px;
+  cursor: pointer;
+}
+
+.second_lvl li:hover{
+background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+}
+
+.second_lvl li{
+  padding: 20px;
+  border-bottom: 1px solid white;
+  margin-left: -40px;
+}
+
+.second_lvl li:first-child{
+  border-top: 1px solid white;
+}
+
+.third_lvl{
+  width: 130px;
+  display: none;
+  position: absolute;
+  background-color: black;
+  margin-left: 150px;
+  margin-top: -39px;
+}
+
+.second_menu:hover .third_lvl{
+  display: block;
+}
+
+.main_menu:hover .second_lvl{
+  display: block;
+}

@@ -1,0 +1,13 @@
+@import "variables";
+
+body{
+  background-color: $bgcolor;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  color: $color;
+  text-align: center;
+  line-height: 700px;
+}
