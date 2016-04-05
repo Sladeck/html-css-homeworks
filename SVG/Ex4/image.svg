@@ -1,0 +1,43 @@
+<svg version="1.1" width="500" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+    <circle cx="250" cy="250" r="100" fill="yellow" stroke="yellow" stroke-width="60"/>
+    <image xlink:href="the_best_man_of_all.png" x="200" y="197" height="100px" width="100px"/>
+    <style>
+      svg{
+      background: blue;
+      }
+        circle {
+            stroke-dasharray: 6.665555;
+            stroke-dashoffset: 500;
+            animation: load 20s linear infinite;
+        }
+
+        img{
+          animation: spin 20s linear infinite;
+        }
+
+        @keyframes load {
+
+            50% {
+                stroke-dashoffset: 0;
+                fill: orange;
+                stroke: orange;
+            }
+
+            to{
+            fill: yellow;
+            stroke: yellow;
+            }
+        }
+
+        @keyframes spin {
+
+          to {
+          -moz-transform:rotate(680deg);
+          -webkit-transform:rotate(680deg);
+          -o-transform:rotate(680deg);
+          -ms-transform:rotate(680deg);
+          }
+        }
+    </style>
+
+</svg>
