@@ -1,0 +1,389 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+/***************************** FONTS ****************************************/
+@font-face{
+    src: url("fonts/EngraversGothic/EngraversGothicBT-Regular.ttf");
+    font-family: "Engravers Gothic";
+}
+@font-face{
+    src: url("fonts/FoundersGrotesk/FoundersGrotesk-Regular.ttf");
+    font-family: "Founders Regular";
+}
+@font-face{
+    src: url("fonts/StanleyPoster/Stanley-Poster.ttf");
+    font-family: "Stanley";
+}
+/*******************************************************************************/
+
+.top{
+    position: absolute;
+    width: 100%;
+    top: 44px;
+    height: 0.1px;
+    background-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.log{
+    display: inline-block;
+    position: relative;
+    margin-left: 19.6%;
+    margin-top: 17px;
+    font-size: 14px;
+    padding-right: 10px;
+    border-right: 1px dotted;
+    font-family: Founders Regular;
+}
+
+.Regi{
+    padding-left: 9px;
+    font-family: Founders Regular;
+}
+
+.basket{
+    position: absolute;
+    width: 21px;
+    height: 19px;
+    float: right;
+    right: 23.7%;
+    top: 11px;
+}
+
+.numberBasket{
+    position: absolute;
+    top: 17px;
+    float: right;
+    right: 22%;
+    font-size: 14px;
+    padding-right: 0.8%;
+    border-right: 1px dotted;
+}
+.search{
+    position: absolute;
+    top: 12px;
+    float: right;
+    right: 19.5%;
+}
+
+/*************************Menu*******************************/
+
+.hrMenuTop{
+    width: 100%;
+    margin-top: 11.2%;
+    margin-bottom: 1.4%;
+    background-color: #e5e5e5;
+    opacity: 0.4;
+}
+.ulMenu{
+    text-align: center;
+}
+.ulMenu li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    padding-right: 25px;
+    font-size: 0.8vw;
+    border-right: 1px dotted;
+    font-weight: bold;
+    font-family: Founders Regular;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+}
+.ulMenu li:hover .submenu{
+    display: block;
+}
+#blog{
+    border-right: 0px;
+}
+
+.hrMenuBot{
+    width: 100%;
+    margin-top: 1.4%;
+    background-color: #e5e5e5;
+    opacity: 0.4;
+}
+/****************************SOUSMENU*************************/
+.submenu{
+    position: absolute;
+    text-transform: none;
+    text-align: left;
+    top: 293px;
+    left: 514px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: white;
+    z-index: 3;
+    display: none;
+}
+.submenu th{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.submenu tr td{
+    text-align: left;
+    padding: 10px;
+    padding-right: 20px;
+    font-family: Founders Regular;
+}
+.dotte{
+    width: 100%;
+    border: 1px dotted;
+}
+#red{
+    color: red;
+}
+/***************************CONTAINER**************************/
+.subImg{
+    display: inline-block;
+    width: 100%;
+    
+}
+.subDiv{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+/************************MODE**********************************/
+.first{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.firstImg{
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 66.1%;
+    height: 35.6%;
+    margin-top: 1.4%;
+    margin-bottom: 1.1%;
+}
+.wordMode{
+    position: absolute;
+    z-index: 1;
+    color: #fefefe;
+    font-size: 2.2vw;
+    left: 47%;
+    top: 50%;
+    font-family: Stanley;
+}
+/********************RESTAURANT*******************************/
+.Rest{
+    height: 492px;
+    width: 406px;
+    display: inline-block;
+    background: url(images/food.png);
+    left: 324px;
+}
+.wordRest{
+    display: inline-block;
+    font: 50px / 25px Stanley;
+    color: #fefefe;
+    margin-top: 235px;
+    font-weight: bold;
+    margin-left: 36px;
+}
+/**********************SUBSCRIBE*****************************/
+.News{
+    height: 217px;
+    width: 407px;
+    display: inline-block;
+    background: url(images/Newsletter-tuile.png);
+    left: 338px;
+    top: -48px;
+}
+.wordSubs{
+    position: absolute;
+    color: #ffffff;
+    top: 3vw;
+    left: 1.8vw;
+    font-size: 1vw;
+    font: 400 18px / 25px Founders Regular;
+    letter-spacing: 2px;
+}
+.strong{
+    font-weight: bold;
+}
+.wordInput{
+    position: absolute;
+    top: 5vw;
+    left: 1.2vw;
+}
+#mail{
+    width: 253px;
+    height: 34px;
+    font-size: 1.1vw;
+}
+#valid{
+    position: absolute;
+    width: 107px;
+    height: 40px;
+    background-color: #a7c5bd;
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+}
+/*************************SOCIAL********************************/
+.Soci{
+    background: url(images/Calque-5.png);
+    width: 407px;
+    height: 247px;
+    top: 220px;
+    left: -73px;
+    
+}
+.social{
+    position: absolute;
+    left: 82px;
+    top: 70px;
+    color: #ffffff;
+    font: 400 18px / 25px Founders Regular;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.under{
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+.icon > li{
+    display: inline-block;
+    margin: 6px;
+    color: #a9c7bf;
+}
+/****************************ART******************************/
+.Arts{
+    position: relative;
+    background: url(images/7226230002BookOfLifeside2.png);
+    width: 407px;
+    height: 492px;
+    margin-top: -492px;
+    margin-left: 1174px;
+}
+.galerie{
+    position: absolute;
+    top: 235px;
+    left: 10px;
+    color: #fefefe;
+    font: 50px / 25px Stanley;
+}
+
+/**********************FOOTER****************************************/
+footer {
+    margin-top: 25px;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px; 
+}
+footer table {
+    width: 68%;
+    margin: auto;
+    text-align: center;
+}
+footer table tr th, footer table td {
+    width: 33.33%;
+    font-weight: bold;
+}
+footer table tr th {
+    font-family: Stanley;
+    font-size: 1.1em;
+    padding-bottom: 20px; 
+}
+footer table tr td {
+    font-family: Founders Regular;
+    font-size: 1.1em; 
+}
+footer div {
+    font-family: Founders Regular;
+    font-size: .9em;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 10px; 
+    font-weight: bold;
+}
+
+form input[type="email"] {
+    display: inline-block;
+    height: 33px;
+    width: 250px;
+    border: 1px solid grey; 
+}
+form input[type="submit"] {
+    display: inline-block;
+    color: #fff;
+    background-color: #a9c7bf;
+    height: 38px;
+    width: 105px;
+    font-size: 0.8em;
+    border: 0;
+    text-transform: uppercase;
+    margin-left: -5px;
+}
+td .icon{
+    position: relative;
+    left: 0px;
+}
+td .icon > li{
+    display: inline-block;
+    margin: 6px;
+}
